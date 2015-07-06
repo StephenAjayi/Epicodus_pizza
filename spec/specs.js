@@ -8,4 +8,9 @@ describe("Pizza", function() {
     var testPizza = new Pizza(1, "large", ["pepperoni", "sausage"])
     expect(testPizza.pizzaSize).to.equal("large")
   });
+
+  it("initializes a pizza with properties and returns toppings", function() {
+    var testPizza = new Pizza(1, "large", ["pepperoni", "sausage"])
+    expect(testPizza.toppings).to.eql( ["pepperoni", "sausage"])
+  });
 });
